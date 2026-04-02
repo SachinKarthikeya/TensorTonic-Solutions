@@ -7,8 +7,6 @@ def euclidean_distance(x, y):
     """
     # Write code here
     x, y = np.array(x), np.array(y)
-    square = np.square(x - y)
-    sum = np.sum(square)
-    result = np.sqrt(sum)
+    result = np.sqrt(np.sum(np.square(x-y)))
     return result
     pass
