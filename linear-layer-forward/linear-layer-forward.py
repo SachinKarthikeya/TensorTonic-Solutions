@@ -5,5 +5,9 @@ def linear_layer_forward(X, W, b):
     Compute the forward pass of a linear (fully connected) layer.
     """
     # Write code here
-    lin_layer = np.dot(X, W) + b
+    X = np.array(X)
+    W = np.array(W)
+    b = np.array(b)
+
+    lin_layer = X @ W + b
     return lin_layer.tolist()
